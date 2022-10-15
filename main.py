@@ -234,7 +234,7 @@ def create_cart():
     return render_template("create_cart.html", form=form, movie_data=movie_data)
 
 
-@app.route("/cre/<path:movie>", methods=["GET", "POST"])
+@app.route("/create_cart_phase/<path:movie>", methods=["GET", "POST"])
 @login_required
 def create_cart3(movie):
     movie = ast.literal_eval(movie) # convert from string to dictionary
