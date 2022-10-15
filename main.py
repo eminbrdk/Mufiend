@@ -128,7 +128,7 @@ class RoomText(db.Model):
 db.create_all()
 
 
-@app.route("/")
+@app.route("/home")
 def home():
     return render_template("index.html")
 
